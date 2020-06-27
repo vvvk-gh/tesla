@@ -1,7 +1,50 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@1000&display=swap');
+
+body {
+
+  font-family: 'Quicksand', sans-serif;
+  font-size: 12px;
+} */
+
+.isactive{
+    color:green;
+}
+nav{
+    border-radius: 0px;
+    border: none;
+    box-shadow: none;
+}
+
+.center, .center-column, .top, .right, .bottom, .left {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.center-column {
+    flex-direction: column;
+}
+
+.top    { align-items:     flex-start; } 
+.bottom { align-items:     flex-end;   } 
+.right  { justify-content: flex-end;   }
+.left   { justify-content: flex-start; }
+
+.single-spaced, .single-spaced * {
+    line-height: 1;
+}
+
+
 .hero{
     background: black url(./images/hero-1.jpg) center / cover; 
  }
- 
+
+
+@media (max-width: 1024px) {
+	.desktop {
+		display: none;
+	}
+}
 
 
 @media (max-width :1024px){.hero{background: black url(./images/hero-2.jpg) center / cover ;}}
